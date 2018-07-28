@@ -1,5 +1,7 @@
 import path from 'path';
 import express from 'express';
+import Loadable from 'react-loadable';
+
 import renderer from './renderer';
 
 const app = express();
@@ -12,4 +14,6 @@ app.use(
 
 app.get('*', renderer);
 
-app.listen(4000);
+Loadable.preloadAll().then(() => {
+  app.listen(4000);
+});

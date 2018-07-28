@@ -9,5 +9,5 @@
       }
     ]
   ],
-  "plugins": ["babel-plugin-transform-react-jsx"]
+  "plugins": ["transform-react-jsx", "syntax-dynamic-import", "react-loadable/babel"]
 }

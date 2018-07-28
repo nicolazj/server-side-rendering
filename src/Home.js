@@ -17,7 +17,6 @@ export default class Home extends Component {
     const { count } = this.state;
     return (
       <div>
-        This is Home
         <p> {count}</p>
         <button onClick={this.inc}>+</button>
       </div>

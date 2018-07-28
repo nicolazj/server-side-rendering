@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+
+import styled from 'styled-components';
+
+const Li = styled.li`
+  list-style: none;
+  border: 1px solid papayawhip;
+  margin: 1px;
+`;
 export default class List extends Component {
   constructor() {
     super();
@@ -12,8 +20,7 @@ export default class List extends Component {
   render() {
     return (
       <div>
-        This is List
-        <ul>{this.state.posts.map(post => <li key={post.id}>{post.title}</li>)}</ul>
+        <ul>{this.state.posts.map(post => <Li key={post.id}>{post.title}</Li>)}</ul>
       </div>
     );
   }
