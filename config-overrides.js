@@ -1,5 +1,4 @@
 const webpack = require('webpack');
-const { injectBabelPlugin } = require('react-app-rewired');
 const { ReactLoadablePlugin } = require('react-loadable/webpack');
 
 module.exports = function override(config, env) {
